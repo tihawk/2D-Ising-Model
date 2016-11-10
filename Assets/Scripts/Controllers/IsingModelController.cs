@@ -14,7 +14,7 @@ public class IsingModelController : MonoBehaviour {
 	void OnEnable () {
 
 		Instance = this;
-		if (temperature == 0)	temperature = IsingModel.critTemperature - 0.1*IsingModel.critTemperature;
+		if (temperature == 0)	temperature = IsingModel.critTemperature;
 		N = gridSize * gridSize;
 		isingModel = new IsingModel (gridSize, temperature);
 
